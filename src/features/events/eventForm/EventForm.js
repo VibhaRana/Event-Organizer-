@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Segment, Header, Form, Button } from 'semantic-ui-react'
 import cuid from 'cuid'
 
-function EventForm({setFormOpen, setEvents, createEvent}) {
+function EventForm({setFormOpen, setEvents, createEvent, selectedEvent}) {
     const initialValues = {
         
         title : '',

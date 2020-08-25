@@ -17,8 +17,10 @@ function EventDashboard({formOpen, setFormOpen}) {
                />
             </Grid.Column>
             <Grid.Column width={6}>
-              {formOpen ?  <EventForm 
-                  setFormOpen = {setFormOpen}
+              {formOpen ?  
+              <EventForm 
+                setFormOpen = {setFormOpen}
+                setEvents = {setEvents}
               /> : null}
               
             </Grid.Column>

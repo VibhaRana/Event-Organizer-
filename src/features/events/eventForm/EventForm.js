@@ -3,7 +3,7 @@ import { Segment, Header, Form, Button } from 'semantic-ui-react'
 import cuid from 'cuid'
 
 function EventForm({setFormOpen, setEvents, createEvent, selectedEvent}) {
-    const initialValues = {
+    const initialValues = selectedEvent ?? {
         
         title : '',
         category : '',

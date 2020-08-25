@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Segment, Header, Form, Button, StepTitle } from 'semantic-ui-react'
+import { Segment, Header, Form, Button } from 'semantic-ui-react'
 import cuid from 'cuid'
 
 function EventForm({setFormOpen, setEvents, createEvent}) {
@@ -17,6 +17,7 @@ function EventForm({setFormOpen, setEvents, createEvent}) {
     const[values, setValues] = useState(initialValues)
 
     function handleFormSubmit(){
+        
         // Create event on submitting a form. Add all these properties along with the initialValues
        createEvent({...values, 
         id: cuid(), 
@@ -40,6 +41,7 @@ function EventForm({setFormOpen, setEvents, createEvent}) {
         setFormOpen(false)
     }
     return (
+        // eslint-disable-next-line no-undef
         <Segment clearing>
             <Header content = 'Create new event'/>
             <Form onSubmit = {handleFormSubmit}>
@@ -94,8 +96,8 @@ function EventForm({setFormOpen, setEvents, createEvent}) {
             <Form.Field>
               <input type = 'date' 
               placeholder = 'Date'
-              name = 'title' 
-              value={values.title} 
+              name = 'date' 
+              value={values.date} 
               onChange={(e) => handleInputChange(e)}    
               />
             </Form.Field>

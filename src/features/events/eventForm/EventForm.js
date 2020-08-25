@@ -18,9 +18,14 @@ function EventForm({setFormOpen, setEvents, createEvent}) {
 
     function handleFormSubmit(){
         // Create event on submitting a form. Add all these properties along with the initialValues
-       createEvent({...values, id: cuid(), hostedBy: 'Vibha', attendees: []})
+       createEvent({...values, 
+        id: cuid(), 
+        hostedBy: 'Bob', 
+        attendees: [], 
+        hostPhotoURL: '/Course Assets/assets/user.png'}
+        )
        setFormOpen(false)    //once submit button is pressed, close the form
-       console.log(values)
+    //    console.log(values)
     }
     
     //Function to handle various inputs by hooks. Consider it a snippet too.

@@ -29,8 +29,8 @@ function EventListItem({event}) {
              <List horizontal>
              {event.attendees.map(attendee => (
                 <EventListAttendee 
-                    key = {attendee.id}
-                    attendee = {attendee}
+                 key = {attendee.id}
+                 attendee = {attendee}
                 />
              ))}
                

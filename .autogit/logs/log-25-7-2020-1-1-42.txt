@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Tue Aug 25 2020 01:01:42 GMT-0700 (Pacific Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+* src/features/events/eventDashboard/EventDashboard.js
+* src/features/events/eventForm/EventForm.js
+
+
+Created files:
+* .autogit/logs/log-25-7-2020-0-31-33.txt
+
+
+Deleted files:
+
+
+Renamed files:

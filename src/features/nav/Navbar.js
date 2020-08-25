@@ -3,6 +3,10 @@ import { Menu, Container, Button } from 'semantic-ui-react'
 import '../../app/layout/styles.css'
 
 function Navbar({setFormOpen}) {
+
+    function handleForm(){
+        setFormOpen(true)
+    }
     return (
         
             <Menu inverted fixed = 'top'>
@@ -12,7 +16,7 @@ function Navbar({setFormOpen}) {
                   </Menu.Item>
                   <Menu.Item name = 'Events'/>
                   <Menu.Item>
-                      <Button positive inverted content = 'Create Event'/>
+                      <Button onClick = {handleForm} positive inverted content = 'Create Event'/>
                   </Menu.Item>
                   <Menu.Item position = 'right'>
                       <Button  basic inverted content = 'Login'/>

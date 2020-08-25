@@ -14,6 +14,7 @@ function App() {
     <Container className = 'main'> 
       <EventDashboard 
         formOpen = {formOpen}
+        setFormOpen = {setFormOpen}
       />
     </Container>
    

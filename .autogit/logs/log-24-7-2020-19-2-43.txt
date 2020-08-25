@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Mon Aug 24 2020 19:02:43 GMT-0700 (Pacific Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/layout/App.js
+* src/features/events/eventDashboard/EventDashboard.js
+* src/features/nav/Navbar.js
+
+
+Created files:
+* .autogit/logs/log-24-7-2020-18-32-33.txt
+
+
+Deleted files:
+
+
+Renamed files:

@@ -6,6 +6,7 @@ import {sampleData} from '../../../app/api/sampleData'
 
 function EventDashboard({formOpen, setFormOpen}) {
     const[events, setEvents] = useState(sampleData)
+   
 
     // Create handler to create events
     function handleCreateEvent(event){
@@ -14,13 +15,15 @@ function EventDashboard({formOpen, setFormOpen}) {
 
     }
 
+    
+
     return (
         <div>
             <Grid>
             <Grid.Column width={10}>
                <EventList 
-                events = {sampleData}
-
+                events = {events}
+                selectEvent = {handleSelectEvent}
                />
             </Grid.Column>
             <Grid.Column width={6}>

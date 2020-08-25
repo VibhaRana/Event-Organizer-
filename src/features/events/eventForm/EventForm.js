@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
 import { Segment, Header, Form, Button, StepTitle } from 'semantic-ui-react'
+import cuid from 'cuid'
 
-function EventForm({setFormOpen, setEvents}) {
+function EventForm({setFormOpen, setEvents, createEvent}) {
     const initialValues = {
+        
         title : '',
         category : '',
         description : '',
@@ -15,9 +17,13 @@ function EventForm({setFormOpen, setEvents}) {
     const[values, setValues] = useState(initialValues)
 
     function handleFormSubmit(){
-     console.log(values)
+        // Create event on submitting a form. Add all these properties along with the initialValues
+       createEvent({...values, id: cuid(), hostedBy: 'Vibha', attendees: []})
+       setFormOpen(false)    //once submit button is pressed, close the form
+       console.log(values)
     }
-
+    
+    //Function to handle various inputs by hooks. Consider it a snippet too.
     function handleInputChange(e){
         const{name, value} = e.target
         setValues({...values, [name] : value})

@@ -7,6 +7,13 @@ import {sampleData} from '../../../app/api/sampleData'
 function EventDashboard({formOpen, setFormOpen}) {
     const[events, setEvents] = useState(sampleData)
 
+    // Create handler to create events
+    function handleCreateEvent(event){
+        //This gonna add additional event along with sampleData which is currently stored in state - 'events'
+        setEvents([...events, event])
+
+    }
+
     return (
         <div>
             <Grid>
@@ -21,6 +28,7 @@ function EventDashboard({formOpen, setFormOpen}) {
               <EventForm 
                 setFormOpen = {setFormOpen}
                 setEvents = {setEvents}
+                createEvent = {handleCreateEvent}
               /> : null}
               
             </Grid.Column>

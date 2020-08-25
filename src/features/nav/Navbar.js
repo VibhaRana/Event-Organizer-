@@ -2,7 +2,7 @@ import React from 'react'
 import { Menu, Container, Button } from 'semantic-ui-react'
 import '../../app/layout/styles.css'
 
-function Navbar() {
+function Navbar({setFormOpen}) {
     return (
         
             <Menu inverted fixed = 'top'>

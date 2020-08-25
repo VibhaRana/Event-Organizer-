@@ -30,6 +30,7 @@ function EventListItem({event}) {
              {event.attendees.map(attendee => (
                 <EventListAttendee 
                     key = {attendee.id}
+                    attendee = {attendee}
                 />
              ))}
                

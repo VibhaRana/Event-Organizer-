@@ -41,9 +41,9 @@ function EventForm({setFormOpen, setEvents, createEvent, selectedEvent}) {
         setFormOpen(false)
     }
     return (
-        // eslint-disable-next-line no-undef
+       
         <Segment clearing>
-            <Header content = 'Create new event'/>
+            <Header content = {selectedEvent ? 'Edit the event':'Create new event'}/>
             <Form onSubmit = {handleFormSubmit}>
             <Form.Field>
               <input 

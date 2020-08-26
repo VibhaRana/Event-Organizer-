@@ -13,7 +13,7 @@ function App() {
     setSelectedEvent(event)
     setFormOpen(true)
 }
-
+   // Create handler which clear the form when clicked the 'Create aButton' from Navbar
   function handleCreateFormOpen(){
     setSelectedEvent(null)
     setFormOpen(true)
